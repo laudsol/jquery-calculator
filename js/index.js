@@ -26,7 +26,7 @@ $('.buttons').on('click', '#equals', function(event){
   var $target = $(this);
   var betterEquation = equation.join("");
   var solution = eval(betterEquation);
-  var error = 'error';
+  var error = 'Error';
   $('#screen').text("");
   if (solution =='Infinity') {
     $('#screen').append(error);
